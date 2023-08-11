@@ -1,0 +1,47 @@
+<?php
+
+return [
+	'lang' => 'en-gb',
+	'title' => 'Preparation for a visa application to The United Kingdom, Canada and USA | Inspiration',
+	'meta' => [
+		'description' => 'Visa to the USA, Canada and the UK. Get quality visa assistance and implement your travel plans. Expert advice and expedited processes for your comfort.',
+		'keywords' => 'Visa processing, US visas, UK visas, Canada visas',
+	],
+	'about_us' => 'About us',
+	'visa_categories' => 'Visa categories',
+	'services' => 'Services',
+	'reviews' => 'Reviews',
+	'contacts' => 'Contacts',
+	'ur_visa' => 'Your visas',
+	'preparation_for_a_visa_application' => 'Preparation for a visa application',
+	'countries' => [
+		'united_kingdom' => 'The United Kingdom',
+		'canada' => 'Canada',
+		'usa' => 'USA',
+	],
+	'review' => 'review',
+	'visa' => 'visa',
+	'5_years_of_experience' => '5 years of experience',
+	'worldwide_application' => 'Worldwide application',
+	'leave_a_request' => 'Leave a request',
+	'our_advantages' => 'Our advantages',
+	'fill_out_the_form' => 'Fill out the form',
+	'social_media' => 'Social media',
+	'phone_number' => 'Phone number',
+	'send_us_an_email' => 'Send us an email',
+	'choose_a_service' => 'Choose a service',
+	'contacts_us' => 'Contacts us',
+    'oferta' => 'Public agreement',
+	'form' => [
+		'name_a' => 'Name',
+		'surname_a' => 'Surname',
+		'age_a' => 'Age',
+		'fullname' => 'Full name',
+		'email' => 'Email',
+		'select_country' => 'Select country',
+		'select' => 'Select',
+		'choose_type_visa' => 'Choose types of visa',
+		'send' => 'Send',
+		'application_succes' => 'Your application has been successfully received.'
+	],
+];

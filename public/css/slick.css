@@ -1,0 +1,21 @@
+/* Slider */
+.slick-slider				{position:relative;display:block;box-sizing:border-box;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-touch-callout:none;-khtml-user-select:none;-ms-touch-action:pan-y;touch-action:pan-y;-webkit-tap-highlight-color:transparent}
+.slick-list 				{position:relative;display:block;overflow:hidden;margin:0;padding:0}
+.slick-list:focus 			{outline:none}
+.slick-list.dragging 		{cursor:pointer}
+.slick-slider .slick-track,
+.slick-slider .slick-list 		{-webkit-transform:translate3d(0, 0, 0);-moz-transform:translate3d(0, 0, 0);-ms-transform:translate3d(0, 0, 0);-o-transform:translate3d(0, 0, 0);transform:translate3d(0, 0, 0)}
+.slick-track 					{position:relative;top:0;left:0;padding:0 0;margin:0 0px;display:flex;align-items:stretch}
+.slick-slide					{display:none;min-height:1px; padding: 10px;}
+.slick-initialized .slick-slide	{display:flex}
+.slick-loading .slick-slide		{visibility:hidden}
+.slick-arrow .slick-hidden		{display:none}
+.slick-prev,
+.slick-next 		{font-size:0;position:absolute;top:45%;width:48px;height:48px;cursor:pointer;border:var(--block-border)!important;border-radius:50%;box-shadow:0 3px 12px rgb(0 0 0 / 10%);/*box-shadow:var(--block-shadow);*/z-index:10;background:#FFF url('../img/icon/chevron-down.svg') center center no-repeat;background-size:20px 20px}
+.slick-prev 		{left:-25px;transform:rotate(90deg)}
+.slick-next 		{right:-25px;transform:rotate(-90deg)}
+.slick-disabled		{display:none!important}
+@media screen and (max-width:1320px) {
+	.slick-prev {left:-10px}
+	.slick-next {right:-10px}
+}

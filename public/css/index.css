@@ -1,0 +1,670 @@
+/* Прикріплення футеру до низу сторінки */
+body {
+	display: flex;
+	flex-flow: column;
+	min-height: 100vh;
+}
+
+main {
+	flex-grow: 1;
+}
+
+footer {
+	bottom: 0;
+}
+
+ul, ol {
+	list-style: none;
+}
+
+@media (min-width: 1400px) {
+	.container {
+		max-width: 1200px;
+	}
+}
+
+h1, h2, h3, h4 {
+	color: #19046d;;
+}
+
+h2 {
+	font-weight: 700;
+}
+
+/* header */
+/* - ---- -------------------------------*/
+.social-head {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.socialbtns, .socialbtns ul, .socialbtns li {
+	margin: 0;
+	padding: 2px;
+}
+
+.socialbtns li {
+	list-style: none outside none;
+	display: inline-block;
+}
+
+.icon {
+	height: 28px;
+	width: 28px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 26px 26px;
+	display: block;
+}
+
+.social-head>div {
+	align-self: center;
+}
+
+.header-lang {
+	display: flex;
+	flex-flow: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-self: center;
+	color: #19046d;
+	font-weight: 700;
+	align-items: center;
+	margin-top: 0px;
+
+	list-style: none;
+}
+
+.header-lang, .header-lang ul, .header-lang li {
+	margin: 0;
+	padding: 1px 0px 2px 2px;
+}
+
+.header-lang li {
+	margin-right: 15px;
+}
+
+.header-lang li a {
+	width: 30px;
+	height: 20px;
+	display: block;
+	background-size: cover;
+	border-radius: 3px;
+	overflow: hidden;
+}
+
+/* header nav */
+/* - ---- -------------------------------*/
+.header-nav {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	color: #19046d;
+	padding: 10px 15px 15px 5px;
+	text-transform: uppercase;
+}
+
+.header-nav a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.logo-inspiration {
+	margin-right: 20px;
+}
+.header-menu ul {
+	margin-bottom: 0;
+}
+
+.header-menu li a {
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.header-list {
+	list-style: none;
+	display: flex;
+	gap: 25px;
+}
+
+#toggler, .header-nav label {
+	display: none;
+}
+
+@media (max-width:1200px) {
+	.header-nav {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.header-nav {
+		flex-direction: row;
+		align-items: center;
+	}
+
+	.header-menu {
+		width: 100%;
+		max-height: 0;
+		overflow: hidden;
+	}
+	.header-list {
+		flex-direction: column;
+		align-items: center;
+		padding: 20px;
+	}
+	.header-nav i {
+		margin-bottom: 5px;
+	}
+	.header-nav label {
+		display: inline-flex;
+		cursor: pointer;
+	}
+	#toggler:checked ~ .header-menu {
+		max-height: 100%;
+	}
+}
+
+@media (max-width:480px) {
+	.social-head {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 2px;
+	}
+}
+/* - ---- -------------------------------*/
+/* end header nav */
+.main-banner {
+	padding: 45px 15px;
+	background-color: #19046d;
+}
+
+.main-banner>div, .main-banner>h4  {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.main-banner h4 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.banner-countries {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 70px;
+	padding: 20px 0;
+}
+
+.banner-countries>div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+}
+
+.banner-second-row {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-items: center;
+	padding: 20px 20px 20px 0;
+}
+
+.banner-second-row>div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.header-info {
+	padding: 0px 0px 10px 0px;
+	margin: 0;
+}
+
+.header-info li {
+	list-style: none;
+	font-size: 25px;
+	padding: 5px 30px;
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 23px;
+	background-image: url('../img/icon/marker.svg');
+	text-transform: none;
+}
+
+.page-big-button {
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.page-big-button a {
+	background-color: #c8102e;
+	padding: 15px 25px;
+	color: #fff;
+	border-radius: 8px 8px 8px 8px;
+	font-size: 16px;
+	font-weight: 500;
+}
+
+@media (max-width:820px) {
+	.banner-countries {
+		gap: 55px;
+	}
+}
+
+@media (max-width:640px) {
+	.banner-countries {
+		gap: 40px;
+	}
+}
+
+@media (max-width:480px) {
+	.banner-countries {
+		gap: 15px;
+	}
+}
+
+@media (max-width:480px) {
+	.banner-first-row {
+		resize: horizontal;
+	}
+	.banner-first-row h4 {
+		text-align: center;
+		text-align-last: center;
+		display: inline-block;
+	}
+	.banner-countries {
+		gap: 15px;
+	}
+	.banner-second-row {
+		padding: 0;
+	}
+}
+
+@media (max-width:385px) {
+	.header-info li {
+		font-size: 20px;
+	}
+}
+
+/* - ---- -------------------------------*/
+/* end header */
+
+
+/* Our advantages */
+/* - ---- -------------------------------*/
+.advantages {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+.advantages>div {
+	width: 48%;
+	display: flex;
+	flex-flow: row;
+	justify-content: flex-start;
+	align-items: flex-start;
+	margin-top: 30px;
+}
+
+.advantages .svg-icon {
+	width: 30px;
+	height: 35px;
+	background-size: 30px 30px;
+	background-image: url('../img/icon/check_mark.svg');
+	background-repeat: no-repeat;
+	flex: none;
+}
+
+.advantage {
+	display: flex;
+	flex-direction: column;
+	
+}
+
+.advantage>div {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 10px;
+}
+
+.advantage>p {
+	padding: 0 10px; /* top and bottom | left and right */
+}
+
+@media screen and (max-width: 991px) {
+	.advantages div {
+		width: 100%;
+	}
+}
+/* - ---- -------------------------------*/
+/* end our advantages */
+
+
+/* Visa categories */
+/* - ---- -------------------------------*/
+.collapsible {
+	background-color: #2a1a69;
+	border-radius: 10px;
+	font-size: 23px !important;
+	color: #fff;
+	cursor: pointer;
+	padding: 18px;
+	width: 100%;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-size: 20px;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+  
+.active, .collapsible:hover {
+	background-color: #19046d;
+}
+  
+.content {
+	padding: 18px;
+	display: none;
+	overflow: hidden;
+	background-color: #f1f1f1dd;
+	border-radius: 10px;
+}
+
+.content>h5 {
+	font-size: 25px;
+	color: #19046d;
+}
+
+.content>p {
+	font-size: 18px;
+}
+
+.icon-flag {
+	height: 28px;
+	width: 56px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 52px 26px;
+	display: block;
+}
+
+.usa {
+	background-image: url('../img/flag/United-States-of-America.webp');
+}
+
+.canada {
+	background-image: url('../img/flag/Canada.webp');
+}
+
+.united_kingdom {
+	background-image: url('../img/flag/United-Kingdom.webp');
+}
+/* - ---- -------------------------------*/ 
+/* End visa categories */
+a {
+	text-decoration: none;
+}
+
+/* services */
+/* - ---- -------------------------------*/
+.services {
+	margin-top: 3px;
+	display: flex;
+	flex-flow: row wrap;
+	gap: 1.33%;
+}
+
+.services-box {
+	display: flex;
+	flex-flow: column;
+	justify-content: space-between;
+	width: calc((100% / 3) - 1%);
+	border: 2px solid #075dbe;
+	border-radius: 10px;
+	padding: 15px 25px 20px;
+	position: relative;
+	margin-top: 20px;
+}
+
+.services-box h3 {
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.custom-ul ul {
+	padding-inline-start: 10px;
+}
+
+.custom-ul li {
+	margin-top: 10px;
+	position: relative;
+	padding-left: 15px;
+	line-height: 1.3em;
+}
+
+.custom-ul li::before {
+	position: absolute;
+	top: 8px;
+	left: 0;
+	display: block;
+	width: 5px;
+	height: 5px;
+	content: " ";
+	border-radius: 5px;
+	background: #075dbe;
+}
+
+.services-box .page-big-button  {
+	background-color: #075dbe;
+	border-bottom: 3px solid #000066;
+	padding: 15px 25px;
+	color: #fff;
+	border-radius: 5px 5px 7px 7px;
+	font-size: 16px;
+	font-weight: 500;
+
+	width: 100%;
+	text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+	.services {
+		justify-content: space-between;
+	}
+	.services-box {
+		width: 48%;
+		margin-right: 0;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.services-box {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.services-box {
+		padding: 15px 10px 20px;
+	}
+}
+/* - ---- -------------------------------*/
+/* end services */
+
+/* reviews */
+/* - ---- -------------------------------*/ 
+.reviews-img {
+	width: 100%;
+    margin: 15px 0 10px 0;
+	border-radius: 10px;
+	object-fit: cover;
+	cursor: pointer;
+}
+/* - ---- -------------------------------*/ 
+/* end reviews */
+
+/* footer */
+/* - ---- -------------------------------*/
+
+.footer {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 5px;
+}
+
+.footer>div {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.footer h4,.footer h5,.footer a {
+	color: #19046d !important;
+	font-weight: 700;
+}
+
+.footer h4,.footer ul {
+	text-transform: uppercase;
+}
+
+.footer h4,.footer h5,.footer a, .footer ul, .footer div {
+	align-self: center;
+}
+
+.footer .icon {
+	height: 32px;
+	width: 32px;
+	background-size: 30px 30px;
+}
+
+.footer-nav {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	font-size: 25px;
+	margin: 0;
+	padding: 0;
+}
+
+.footer-nav>li{
+	align-self: center;
+}
+
+.a-mail-insp {
+	font-size: 20px;
+}
+
+@media screen and (max-width:640px) {
+	.footer {
+		display: flex;
+		flex-direction: column;
+		gap: 5px;
+	}
+	.footer .a-oferta {
+		text-transform: uppercase;
+	}
+}
+
+@media (max-width:345px) {
+	.a-mail-insp {
+		font-size: 18px;
+	}
+}
+/* - ---- -------------------------------*/ 
+/* end footer */
+
+/* прокрутка сторінки вверх */
+.top-scroll {
+    z-index: 15;
+    width: 60px;
+    height: 100%;
+    background: #19046d;;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    cursor: pointer;
+    display: none;
+    opacity: .75;
+}
+
+.top-scroll:after {
+    margin-top: 30px;
+    display: block;
+    content: '';
+    height: 20px;
+    background-image: url('../img/icon/chevron-up.svg');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 12px;
+}
+.top-scroll:hover {
+	opacity:1
+}
+
+@media screen and (max-width:1475px) {
+	.top-scroll			{width:100px;height:30px;top:15px;left:auto;right:calc(50% - 50px);border-radius:3px;padding-top:2px;z-index:5000}
+	.top-scroll:after	{margin-top:5px}
+}
+
+
+/* oferta */
+
+.oferta h2 {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	text-align: center;
+}
+
+.oferta h3 {
+	padding-top: 20px;
+	padding-bottom: 15px;
+	font-weight: 600 !important;
+}
+
+.oferta p {
+	line-height: 1.6em;
+}
+
+.oferta ul {
+	list-style: inside;
+}
+
+.oferta ul>li {
+	padding: 5px;
+}
+/* end oferta */
+
+/* спам перевірка */
+.mailer-a {
+	display: none;
+}
+
+.modal-header,
+.modal-footer {
+	border: none !important;
+}
